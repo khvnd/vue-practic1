@@ -1,0 +1,396 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 177px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    }
+
+
+a {
+    color: rgb(41, 47, 54);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.banner {
+    height: 758px;
+    margin-top: 57px;
+    background-image: url(img/banner.png);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner-content {
+    max-width: 595px;
+    padding-left: 52px;
+}
+
+.title {
+    color: rgb(41, 47, 54);
+    font-size: 65px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "DM Serif Display";
+    padding-bottom: 18px;
+}
+
+.text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 21px;
+}
+
+.btn-banner {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    width: 182.14px;
+    height: 75px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    background: rgb(41, 47, 54);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalog-info {
+    padding-top: 96px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text-catalog {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 619px);
+    gap: 56px;
+    padding-bottom: 97px;
+}
+
+.content-item {
+   width: 547px;
+   padding-top: 24px;
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subject {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
+.text-item {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+    
+}
+
+.btn-item {
+    width: 70px;
+    height: 70px;
+    background: rgb(244, 240, 236);
+    border-radius: 50px;
+    border: none;
+}
+
+.wight {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(244, 240, 236);
+}
+
+.aside {
+    
+    
+    display: flex ;
+    flex-direction: row;   
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.aside-item {
+    margin-top: 151px;
+    margin-bottom: 151px;
+    /*display: flex;
+    flex-direction: column;
+    
+    align-items: center;*/
+    text-align: center;
+    border-right: 1px solid rgb(205, 162, 116);
+    
+    padding-right:  65px;
+}
+
+.aside-item:last-child {
+    border-right: none;
+}
+
+.subject-aside {
+    color: rgb(205, 162, 116);
+    font-family: "DM Serif Display";
+    font-size: 85px;
+    font-weight: 400;
+}
+
+.text-aside {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.news-info {
+    padding-top: 96px;
+    padding-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.news-info-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 27px;
+    
+}
+
+.news-item {
+    width: 382px;
+    height: 521px; 
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    padding: 21px;
+}
+
+.news-item:hover {
+    background-color: rgb(244, 240, 236);
+}
+
+.news-img {
+    
+    width: 340px;
+    height: 289.27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-bottom: 20.27px;
+}
+
+.news-img1 {
+    background-image: url(img/news1.png);
+}
+
+.news-img2 {
+    background-image: url(img/news2.png);
+    
+}
+
+.news-img3 {
+    background-image: url(img/news3.png);
+  
+}
+
+.img-block {
+    width: 124px;
+    height: 41px;
+    border-radius: 8px 8px 8px 0px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.img-text {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 11px;
+    
+}
+
+.news-item-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 21px;
+   
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.news-item-text {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.btn-news {
+    background: rgb(244, 240, 236);
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 101px;
+    padding-top: 33px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 54px;
+    padding-top: 31px;
+   
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.pages-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.a-pages {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contacts {
+    width: 258px;
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.contacts-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contacts-info {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
