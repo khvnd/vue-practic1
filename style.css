@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -58,7 +58,7 @@ a {
     font-size: 65px;
     font-weight: 400;
     text-align: left;
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     padding-bottom: 18px;
 }
 
@@ -97,7 +97,7 @@ a {
 
 .subtitle {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -136,7 +136,7 @@ a {
 
 .subject {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 25px;
     font-weight: 400;
     padding-bottom: 4px;
@@ -163,6 +163,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     background: rgb(244, 240, 236);
+    
 }
 
 .aside {
@@ -197,7 +198,7 @@ a {
 
 .subject-aside {
     color: rgb(205, 162, 116);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 85px;
     font-weight: 400;
 }
@@ -220,7 +221,7 @@ a {
 
 .news-subtitle {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 50px;
     font-weight: 400;
 }
@@ -235,8 +236,9 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 27px;
-    
+    padding-top: 30px;
 }
 
 .news-item {
@@ -269,12 +271,22 @@ a {
 
 .news-img2 {
     background-image: url(img/news2.png);
-    
 }
 
 .news-img3 {
     background-image: url(img/news3.png);
-  
+}
+
+.news-img4 {
+    background-image: url(img/news4.png);
+}
+
+.news-img5 {
+    background-image: url(img/news5.png);
+}
+
+.news-img6 {
+    background-image: url(img/news6.png);
 }
 
 .img-block {
@@ -301,7 +313,7 @@ a {
 
 .news-item-subtitle {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 25px;
     font-weight: 400;
     padding-top: 21px;
@@ -362,7 +374,7 @@ a {
 
 .pages-title {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 25px;
     font-weight: 400;
 }
@@ -384,7 +396,7 @@ a {
 
 .contacts-title {
     color: rgb(41, 47, 54);
-    font-family: "DM Serif Display";
+    font-family: "DM Serif Display", sans-serif;
     font-size: 25px;
     font-weight: 400;
 }
@@ -393,4 +405,188 @@ a {
     color: rgb(77, 80, 83);
     font-size: 22px;
     font-weight: 400;
+}
+
+.banner-content-news {
+    height: 452px;
+    padding-top: 41px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.blog-banner {
+    position: absolute; /* или fixed, если нужно, чтобы блок всегда оставался на экране */
+    left: 0;
+    right: 0;
+    top: 83px;
+    bottom: 2951px;
+    width: 100vw; /* растягиваем на всю ширину экрана */
+    height: 356px; /* задаем высоту блока */
+    background-image: url(img/bannerBlog.png);
+    background-size: cover; /* картинка будет покрывать весь блок */
+    background-position: center; /* центрируем изображение */
+    z-index: -1;
+   
+}
+
+.banner-news-info {
+    width: 503px;
+    height: 274px;
+    padding: 41px 78px ;
+    border-radius: 37px 37px 0px 0px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;   
+}
+
+.banner-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.last-post {
+    padding-top: 104px;
+}
+
+.latest-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 27px;
+}
+
+.img-post {
+    width: 569px;
+    height: 478px;
+}
+
+.last-content {
+    height: 584px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    gap: 65px;
+    padding: 22px;
+}
+
+.post-content {
+    width: 489px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 41px;
+    
+}
+
+.post-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+.post-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.btn-last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.date-post {
+    color: rgb(77, 80, 83);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-post {
+    width: 52px;
+    height: 52px;
+    background: rgb(244, 240, 236);
+    border: none;
+    border-radius: 50px;
+}
+
+.news-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    
+}
+
+.news-block {
+    padding-top: 88px;
+}
+
+.btn-news-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 51px;
+}
+
+
+ 
+.pagination {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 51px;
+    padding-bottom: 200px;
+}
+
+button {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    color: rgb(41, 47, 54);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button.active {
+    background: #F4F0EC;
+    border: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <img src="img/Logo.png" alt="logo" class="logo">
+        <div class="menu">
+            <a href="#">Домой</a>
+            <a href="#">Проект</a>
+            <a href="#">Блог</a>
+        </div>
+    </header>
+
+    <div class="banner-content-news">
+        <div class="blog-banner">
+        </div>
+        <div class="banner-news-info">
+            <h3 class="banner-subtitle">Статьи & Новости</h3>
+            <p class="banner-text">Домой / Блог</p>
+        </div>
+    </div>
+
+    <div class="last-post">
+        <h4 class="latest-title">Последний пост</h4>
+        <div class="last-content">
+            <img src="img/lastPost.png" alt="lastpost" class="img-post">
+            <div class="post-content">
+                <h4 class="post-title">Low Cost Latest Invented Interior Designing Ideas</h4>
+                <p class="post-text">С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности для примеров шрифтов и текстов. Перед появлением электронных издательств дизайнеры импровизировали в работе над макетами, изображая текст при помощи волнистых линий. С появлением самоклеющихся наклеек с напечатанным текстом «Lorem ipsum» появился более реалистичный способ обозначения расположения текста на странице.</p>
+                <div class="btn-last">
+                    <p class="date-post">26 December,2022 </p>
+                    <button class="btn-post"><img src="img/arrow.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-block">
+
+    <div class="news-title-block">
+        <h4 class="news-title">Статьи & Новости</h4>
+    </div>
+
+
+    <div id="app1">
+        <div class="news-content">
+          <div class="news-item" v-for="(news, index) in paginatedNews" :key="index">
+            <div :class="['news-img', news.imgClass]">
+              <div class="img-block">
+                <p class="img-text">{{ news.imgText }}</p>
+              </div>
+            </div>
+            <h4 class="news-item-subtitle" v-html="news.subtitle"></h4>
+            <div class="description">
+              <p class="news-item-text">{{ news.date }}</p>
+              <button class="btn-news">
+                <img src="img/arrow.png" alt="arrow" />
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="pagination">
+          <button @click="prevPage" :disabled="currentPage === 1"><img src="img/arrow2.png" width="5.94px"></button>
+          <button
+            v-for="page in totalPages"
+            :key="page"
+            @click="goToPage(page)"
+            :class="{ active: currentPage === page }"
+          >
+            {{ page }}
+          </button>
+          <button @click="nextPage" :disabled="currentPage === totalPages"><img src="img/arrow.png" width="5.94px"></button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="media">
+            <img src="img/Logo.png" class="logo">
+            <div class="social">
+                <img src="img/tw.png">
+                <img src="img/in.png">
+            </div>
+        </div>
+        <div class="pages">
+            <h4 class="pages-title">Страницы</h4>
+            <a href="#" class="a-pages">Домой</a>
+            <a href="#" class="a-pages">Проект</a>
+            <a href="#" class="a-pages">Блог</a>
+        </div>
+        <div class="contacts">
+            <h4 class="contacts-title">Контакты</h4>
+            <p class="contacts-info">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="contacts-info">contact@interno.com</p>
+            <p class="contacts-info">(123) 456 - 7890</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</html>
