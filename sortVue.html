@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список товаров</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>Список товаров</h2>
+    <button @click="sortAscending">Сортировать по возрастанию</button>
+    <button @click="sortDescending">Сортировать по убыванию</button>
+    <ul>
+      <li v-for="product in sortedProducts" :key="product.id">
+        {{ product.name }} - {{ product.price }} ₽
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+
+    createApp({
+      setup() {
+        const products = ref([
+          { id: 1, name: 'Ноутбук', price: 70000 },
+          { id: 2, name: 'Смартфон', price: 50000 },
+          { id: 3, name: 'Планшет', price: 30000 },
+          { id: 4, name: 'Наушники', price: 10000 },
+          { id: 5, name: 'Клавиатура', price: 90000 },
+          { id: 6, name: 'Колонки', price: 80000 },
+          { id: 7, name: 'Монитор', price: 100000 }
+
+        ]);
+        
+        const sortOrder = ref('asc');
+
+        const sortedProducts = computed(() => {
+          return [...products.value].sort((a, b) => {
+            return sortOrder.value === 'asc' ? a.price - b.price : b.price - a.price;
+          });
+        });
+
+        const sortAscending = () => {
+          sortOrder.value = 'asc';
+        };
+
+        const sortDescending = () => {
+          sortOrder.value = 'desc';
+        };
+
+        return {
+          sortedProducts,
+          sortAscending,
+          sortDescending
+        };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
+
