@@ -63,9 +63,11 @@
             <h4 class="news-item-subtitle" v-html="news.subtitle"></h4>
             <div class="description">
               <p class="news-item-text">{{ news.date }}</p>
-              <button class="btn-news">
-                <img src="img/arrow.png" alt="arrow" />
-              </button>
+              <a href="articles.html">
+                <button class="btn-news">
+                  <img src="img/arrow.png" alt="arrow" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -80,7 +82,7 @@
           >
             {{ page }}
           </button>
-          <button @click="nextPage" :disabled="currentPage === totalPages"><img src="img/arrow.png" width="5.94px"></button>
+          <button href="articles.html" @click="nextPage" :disabled="currentPage === totalPages"><img src="img/arrow.png" width="5.94px"></button>
         </div>
       </div>
 
@@ -94,9 +96,9 @@
         </div>
         <div class="pages">
             <h4 class="pages-title">Страницы</h4>
-            <a href="#" class="a-pages">Домой</a>
+            <a href="index.html" class="a-pages">Домой</a>
             <a href="#" class="a-pages">Проект</a>
-            <a href="#" class="a-pages">Блог</a>
+            <a href="blog.html" class="a-pages">Блог</a>
         </div>
         <div class="contacts">
             <h4 class="contacts-title">Контакты</h4>

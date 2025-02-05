@@ -97,7 +97,7 @@ const App1 = {
               }
         ],
         currentPage: 1,
-        itemsPerPage: 6, // Теперь на одной странице 6 новостей
+        itemsPerPage: 6, 
       };
     },
     computed: {
@@ -130,3 +130,6 @@ const App1 = {
   };
   
   Vue.createApp(App1).mount('#app1');
+
+  
+

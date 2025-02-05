@@ -590,3 +590,184 @@ button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.articles-banner {
+position: absolute; 
+left: 0;
+right: 0;
+top: 83px;
+bottom: 2951px;
+width: 100vw; 
+height: 351px; 
+background-image: url(img/bannerArticles.png);
+background-size: cover; 
+background-position: center; 
+z-index: -1;
+}
+
+.articles-banner-block {
+    height: 351px; 
+    margin-top: 40px;
+}
+
+.articles-content {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 52px;
+}
+
+.tags {
+    width: 335px;
+    height: 145px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.tags .active {
+    background-color: black;
+    color: white;
+}
+
+.tags-block {
+    width: 345px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+.tags-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.tags button {
+    width: 131px;
+    height: 41px;
+    border-radius: 10px;
+    background: rgb(244, 240, 236);
+    border: none;;
+}
+
+.articles {
+    width: 804px;
+}
+
+.article-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.acticle-img {
+    width: 799px;
+    height: 539px;
+    border-radius: 50px;
+    
+}
+
+.article-img1 { 
+    background-image: url(img/кухня.png);
+}
+
+.article-img2 {
+    background-image: url(img/Спальня.png);
+}
+
+.article-img3 {
+    background-image: url(img/Ванная.png)
+}
+
+.article-img4 {
+    background-image: url(img/планировка.png)
+}
+
+.article-img5 {
+    background-image: url(img/архитектура.png)
+}
+
+.article-img6 {
+    background-image: url(img/Гостиная.png)
+}
+
+
+.article-date {
+    padding-top: 46px;
+    color: rgb(77, 80, 83);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.article-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 48px;
+    padding-bottom: 35px;
+}
+
+.quote {
+    height: 267px;
+    border-radius: 50px;
+    background: rgb(244, 240, 236);
+    border: none;
+    padding: 53px 227px 53px 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.quote-title {
+    color: rgb(205, 162, 116);
+    font-family: "DM Serif Display", sans-serif;
+    font-style: italic;
+    font-size: 150px;
+    font-weight: 400;
+   
+    text-align: center;
+}
+
+.quote-text {
+    color: rgb(205, 162, 116);
+    font-family: "DM Serif Display", sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.second {
+    padding-top: 27px;
+    padding-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.second-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.second-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
